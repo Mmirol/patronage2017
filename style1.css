@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #36454f;
+  margin-top: 200px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.myBox {
+  border: 1px solid #cccccc;
+  /*border-radius: 10px;*/
+
+  width: 100px;
+  height: 100px;
+
+  cursor: pointer;
+  box-shadow: 10px 10px 25px 5px rgba(0,0,0,.5);
+}
+
+.myBox:active {
+  background-color: #cccccc;
+  transform: translateY(4px);
+}
+
+.clickCount {
+  margin-top: 50px;
+  display: inline-block;
+  font: bold 56px Monospace, Arial, sans-serif;
+
+  color: #ffffff;
+  text-shadow: 1px 1px black, 2px 2px black,
+                     3px 3px black, 4px 4px black,
+                     5px 5px black, 6px 6px black,
+                     7px 7px black, 8px 8px black;
+}
+
+.clickCount:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
